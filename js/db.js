@@ -1,5 +1,5 @@
 (function() {
-    let config = {locateFile: () => "./sql-wasm.wasm"}
+    let config = {locateFile: () => "../sql-wasm.wasm"}
     initSqlJs(config).then(function(SQL){
         const xhr = new XMLHttpRequest();
         xhr.open('GET', "./chinook.db", true);

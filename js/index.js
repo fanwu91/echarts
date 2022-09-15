@@ -5,7 +5,7 @@
     // Specify the configuration items and data for the chart
     var option = {
         title: {
-            text: 'ECharts Getting Started Example'
+            text: 'ECharts Example'
         },
         tooltip: {},
         legend: {
