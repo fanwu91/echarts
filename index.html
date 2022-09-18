@@ -7,12 +7,20 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <!-- Prepare a DOM with a defined width and height for ECharts -->
+<!-- file uploader -->
+    <div class="drop-zone">
+      <span class="drop-zone__prompt">Drop perf.db or click to upload</span>
+      <input id="upload" type="file" name="perfdb" class="drop-zone__input"/>
+    </div>
+
+<!-- charts area -->
     <div id="main"></div>
-    <input type="file" id="dbfile" />
-    <script src="js/sql-wasm.js"></script>
+
+<!-- js files -->
     <script src="js/echarts.js"></script>
+    <script src="js/sql-browser.min.js"></script>
+    <script src="js/perf-db.js"></script>
+    <script src="js/file-uploader.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/db.js"></script>
   </body>
 </html>
