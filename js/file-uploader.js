@@ -8,7 +8,7 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
     inputElement.addEventListener("change", (e) => {
         if (inputElement.files.length) {
             console.log(`file uplaoded: file length: ${inputElement.files.length}`);
-            perfdb.onUploded(inputElement.files[0]); 
+            perfdb.onUpload(inputElement.files[0]); 
         }
         inputElement.value = null;
     });
@@ -30,7 +30,7 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
 
         if (e.dataTransfer.files.length) {
             inputElement.files = e.dataTransfer.files;
-            perfdb.onUploded(inputElement.files[0]);
+            perfdb.onUpload(inputElement.files[0]);
         }
     });
 });
